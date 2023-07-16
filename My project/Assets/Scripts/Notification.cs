@@ -25,6 +25,7 @@ public class Notification : MonoBehaviour
 
     public void SendNotification()
     {
+        AndroidNotificationCenter.CancelAllNotifications();
         //RequestNotificationPermission();
         DateTime alarmTime = DateTime.Now;
         var notification = new AndroidNotification();
